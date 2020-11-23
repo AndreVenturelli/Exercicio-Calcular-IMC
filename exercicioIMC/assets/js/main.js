@@ -1,4 +1,4 @@
-// Capturar evento de submit do formulário
+// pegar evento de submit do formulário
 const form = document.querySelector('#formulario');
 
 form.addEventListener('submit', function (e) {
@@ -26,9 +26,9 @@ form.addEventListener('submit', function (e) {
 
   setResultado(msg, true);
 });
-
+//
 function getNivelImc (imc) {
-  const nivel = ['Abaixo do peso', 'Parabéns vc é gostosa ', 'Sobrepeso',
+  const nivel = ['Abaixo do peso', 'Peso normal', 'Sobrepeso',
     'Obesidade grau 1', 'Obesidade grau 2', 'Obesidade grau 3'];
 
   if (imc >= 39.9) return nivel[5];
